@@ -8,6 +8,7 @@ import { ExpirationCompleteListener } from "./events/listeners/expiration-comple
 import { PaymentCreatedListener } from "./events/listeners/payment-created-listener";
 
 const start = async () => {
+  console.log("Starting...");
   const missingEnvVars = checkEnvVar(
     "ORDER_MONGO_URI",
     "NATS_URL",
