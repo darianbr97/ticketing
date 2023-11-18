@@ -3,7 +3,6 @@ import app from "./app";
 import { checkEnvVar } from "@db97tickets/common";
 
 const start = async () => {
-  console.log("Auth stating...");
   const missingEnvVars = checkEnvVar("JWT_KEY", "AUTH_MONGO_URI");
   if (missingEnvVars) throw new Error(missingEnvVars.join(", "));
 
